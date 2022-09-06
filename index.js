@@ -1,5 +1,7 @@
-import { getSkills } from './database'
-const app = require('express')()
+import { getSkills } from './database.js'
+import express from 'express'
+
+const app = express()
 
 app.get('/skills', async (req, res) => {
     try{
